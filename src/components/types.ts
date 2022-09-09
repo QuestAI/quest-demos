@@ -17,9 +17,11 @@
 
 
 
+
 export interface AccordionsHelpersContentProps {
   content: any;
 };
+
 
 
 
@@ -29,6 +31,7 @@ export interface AccordionsHelpersTopProps {
   onClick: any;
   title: any;
 };
+
 
 
 
