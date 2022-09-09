@@ -15,11 +15,19 @@
 
 
 
+
+export interface AccordionsHelpersContentProps {
+  content: any;
+};
+
+
+
 export interface AccordionsHelpersTopProps {
   state: any;
   onClick: any;
   title: any;
 };
+
 
 
 
