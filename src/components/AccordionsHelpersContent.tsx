@@ -50,7 +50,7 @@ function AccordionsHelpersContent(props: AccordionsHelpersContentProps): JSX.Ele
   return (
     <TypeTextIndentFalseS >
        <Txt >
-         {props.content}
+         {props.content + "something new"}
            </Txt>
      </TypeTextIndentFalseS>
    );
