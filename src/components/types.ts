@@ -13,37 +13,18 @@
 *
 **********************************************************************/
 
-
-
-
-
-
-
 export interface AccordionsHelpersTopProps {
   state: any;
   onClick: any;
   title: any;
 };
 
-
-
-
-
-
-
-
 export interface AccordionsHelpersContentProps {
   content: any;
 };
-
-
-
-
-
 
 export interface AccordionsAccordionProps {
   title: any;
   content: any;
   testprop: any;
 };
-
