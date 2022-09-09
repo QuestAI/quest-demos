@@ -12,9 +12,9 @@
 *
 **********************************************************************/
 
+import ArrowUpImage from './assets/images/arrow_up.png';
+import ArrowDownImage from './assets/images/arrow_down.png';
 import { styled } from '@mui/material/styles';
-import Icons16PxExpanded from './Icons16PxExpanded';
-import ArrowDown from './ArrowDown';
 import { AccordionsHelpersTopProps } from './types';
 import useAccordionsHelpersTop from './useAccordionsHelpersTop';
  
@@ -51,17 +51,17 @@ const Department: any = styled("div")(({ theme }: any) =>({
   margin: `0px`,  
 }));
   
-const ArrowUp1: any = styled(Icons16PxExpanded)(({ theme }: any) =>({  
-  width: `16px`,  
+const ArrowUp: any = styled("img")({  
   height: `16px`,  
+  width: `16px`,  
   margin: `0px 0px 0px 8px`,  
-}));
+});
   
-const ArrowDown1: any = styled(ArrowDown)(({ theme }: any) =>({  
-  width: `16px`,  
+const ArrowDown: any = styled("img")({  
   height: `16px`,  
+  width: `16px`,  
   margin: `0px 0px 0px 8px`,  
-}));
+});
  
 function AccordionsHelpersTop(props: AccordionsHelpersTopProps): JSX.Element {
   const {data, fns} = useAccordionsHelpersTop();
@@ -71,10 +71,10 @@ function AccordionsHelpersTop(props: AccordionsHelpersTopProps): JSX.Element {
          {props.title}
            </Department>
        {((props.state === 'expanded')) &&
-           <ArrowUp1   />
+           <ArrowUp  src={ArrowUpImage} alt={"arrow up"}/>
        }
        {(!(props.state === 'expanded')) &&
-           <ArrowDown1   />
+           <ArrowDown  src={ArrowDownImage} alt={"arrow down"}/>
        }
      </StateCollapsedIconRi>
    );

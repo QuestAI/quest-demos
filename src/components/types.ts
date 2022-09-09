@@ -18,13 +18,6 @@
 
 
 
-export interface AccordionsHelpersContentProps {
-  content: any;
-};
-
-
-
-
 
 export interface AccordionsHelpersTopProps {
   state: any;
@@ -32,6 +25,16 @@ export interface AccordionsHelpersTopProps {
   title: any;
 };
 
+
+
+
+
+
+
+
+export interface AccordionsHelpersContentProps {
+  content: any;
+};
 
 
 
