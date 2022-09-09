@@ -13,8 +13,8 @@
 **********************************************************************/
 
 import { styled } from '@mui/material/styles';
-import ArrowDown from './ArrowDown';
 import Icons16PxExpanded from './Icons16PxExpanded';
+import ArrowDown from './ArrowDown';
 import { AccordionsHelpersTopProps } from './types';
 import useAccordionsHelpersTop from './useAccordionsHelpersTop';
  
@@ -35,34 +35,6 @@ const StateCollapsedIconRi: any = styled("div", {
   cursor: `pointer`,  
 }));
   
-const ArrowDown1: any = styled(ArrowDown)(({ theme }: any) =>({  
-  width: `16px`,  
-  height: `16px`,  
-  margin: `0px 0px 0px 8px`,  
-}));
-  
-const ArrowUp1: any = styled(Icons16PxExpanded)(({ theme }: any) =>({  
-  width: `16px`,  
-  height: `16px`,  
-  margin: `0px 0px 0px 8px`,  
-}));
-  
-const ProductReviews: any = styled("div")(({ theme }: any) =>({  
-  textAlign: `left`,  
-  whiteSpace: `pre-wrap`,  
-  color: `rgba(0, 0, 0, 1)`,  
-  fontStyle: `normal`,  
-  fontFamily: `SF Pro Text`,  
-  fontWeight: `500`,  
-  fontSize: `12px`,  
-  letterSpacing: `0px`,  
-  textDecoration: `underline`,  
-  lineHeight: `16px`,  
-  textTransform: `none`,  
-  flexGrow: `1`,  
-  margin: `0px 0px 0px 8px`,  
-}));
-  
 const Department: any = styled("div")(({ theme }: any) =>({  
   textAlign: `left`,  
   whiteSpace: `pre-wrap`,  
@@ -79,13 +51,13 @@ const Department: any = styled("div")(({ theme }: any) =>({
   margin: `0px`,  
 }));
   
-const ArrowUp2: any = styled(Icons16PxExpanded)(({ theme }: any) =>({  
+const ArrowUp1: any = styled(Icons16PxExpanded)(({ theme }: any) =>({  
   width: `16px`,  
   height: `16px`,  
   margin: `0px 0px 0px 8px`,  
 }));
   
-const ArrowDown2: any = styled(ArrowDown)(({ theme }: any) =>({  
+const ArrowDown1: any = styled(ArrowDown)(({ theme }: any) =>({  
   width: `16px`,  
   height: `16px`,  
   margin: `0px 0px 0px 8px`,  
@@ -95,25 +67,14 @@ function AccordionsHelpersTop(props: AccordionsHelpersTopProps): JSX.Element {
   const {data, fns} = useAccordionsHelpersTop();
   return (
     <StateCollapsedIconRi onClick={props.onClick} onMouseOver={fns.onMouseOver} onMouseOut={fns.onMouseOut} props={props} data={data} >
-       {false &&
-           <ArrowDown1   />
-       }
-       {false &&
-           <ArrowUp1   />
-       }
-       {false &&
-           <ProductReviews >
-           {`Product reviews`}
-             </ProductReviews>
-       }
        <Department >
          {props.title}
            </Department>
        {((props.state === 'expanded')) &&
-           <ArrowUp2   />
+           <ArrowUp1   />
        }
        {(!(props.state === 'expanded')) &&
-           <ArrowDown2   />
+           <ArrowDown1   />
        }
      </StateCollapsedIconRi>
    );
