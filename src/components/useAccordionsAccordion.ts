@@ -19,7 +19,7 @@ const useAccordionsAccordion = () => {
   let data: any = {
     state
   };
-  const onAccordionClick = (): any => {
+  const onAccordionClick = (param1:any): any => {
     setState(state === 'collapsed' ? 'expanded' : 'collapsed')
   };
 
