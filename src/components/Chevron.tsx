@@ -17,7 +17,7 @@ import { styled } from '@mui/material/styles';
 import { ChevronProps } from './types';
 
  
-const DirectionLeft: any = styled("div")({  
+const DirectionRight: any = styled("div")({  
   display: `flex`,  
   position: `relative`,  
   isolation: `isolate`,  
@@ -41,9 +41,9 @@ const Icon1: any = styled("img")({
  
 function Chevron(props: ChevronProps): JSX.Element {
   return (
-    <DirectionLeft className={props.className} >
+    <DirectionRight className={props.className} >
       <Icon1  src={Icon1Image} alt={"Icon"}/>
-    </DirectionLeft>
+    </DirectionRight>
   );
 }
 

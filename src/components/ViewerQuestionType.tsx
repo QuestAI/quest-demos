@@ -12,10 +12,7 @@
 *
 **********************************************************************/
 
-import CheckImage from './assets/images/ViewerQuestionType_Check_1.png';
-import CheckImage1 from './assets/images/ViewerQuestionType_Check.png';
-import CheckImage2 from './assets/images/ViewerQuestionType_Check.png';
-import CheckImage3 from './assets/images/ViewerQuestionType_Check.png';
+import CheckImage from './assets/images/ViewerQuestionType_Check.png';
 import { styled } from '@mui/material/styles';
 import { ViewerQuestionTypeProps } from './types';
 import useViewerQuestionType from './useViewerQuestionType';
@@ -116,7 +113,7 @@ function ViewerQuestionType(props: ViewerQuestionTypeProps): JSX.Element {
         <CheckboxAndRadio1 >
           <CheckboxBase props={props} data={data} >
             {((!data.isHover && props.number == props.currentAnswer) || (data.isHover && props.number === props.currentAnswer)) &&
-              <Check props={props} data={data}  src={`${data.isHover && props.number !== props.currentAnswer ? CheckImage1 : !data.isHover && props.number == props.currentAnswer ? CheckImage2 : data.isHover && props.number === props.currentAnswer ? CheckImage3 : CheckImage }`} alt={"Check"}/>
+              <Check props={props} data={data}  src={CheckImage} alt={"Check"}/>
             }
           </CheckboxBase>
         </CheckboxAndRadio1>
