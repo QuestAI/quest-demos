@@ -14,9 +14,11 @@
 **********************************************************************/
 
 
+
 export interface QuizViewerModuleProps {
   className?: any;
 };
+
 
 
 export interface ViewerQuestionTypeProps {
@@ -28,6 +30,7 @@ export interface ViewerQuestionTypeProps {
 };
 
 
+
 export interface ProgressStepsProgressMinimalIcProps {
   className?: any;
   completed: any;
@@ -35,10 +38,12 @@ export interface ProgressStepsProgressMinimalIcProps {
 };
 
 
+
 export interface ChevronProps {
   className?: any;
   direction: any;
 };
+
 
 
 export interface Button1Props {
@@ -48,6 +53,7 @@ export interface Button1Props {
   current: any;
   currentAnswer: any;
 };
+
 
 
 export interface StepBaseProps {
