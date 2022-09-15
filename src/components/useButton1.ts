@@ -9,26 +9,22 @@
 *
 *
 **********************************************************************/
+import React, { useState } from "react";
+const useButton1 = () => {
+  const [isActive, setIsActive] = useState(false);
+  let data: any = {};
+  data.isActive = isActive
 
-import { useState } from "react";
-
-const useAccordionsHelpersTop = () => {
-
-  const [isHovered, setIsHovered] = useState(false);
-
-  let data: any = {
-    isHovered
+  const setActive = (): any => {
+    setIsActive(true);
   };
   
-  const onMouseOver = (): any => {
-    setIsHovered(true)
-  };
-  const onMouseOut = (): any => {
-    setIsHovered(false)
+  const setInactive = (): any => {
+    setIsActive(false);
   };
 
-  let fns: any = {onMouseOver, onMouseOut};
+  let fns: any = {setActive, setInactive};
   return {data, fns};
 }
 
-export default useAccordionsHelpersTop;
+export default useButton1;

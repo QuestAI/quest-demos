@@ -13,18 +13,41 @@
 *
 **********************************************************************/
 
-export interface AccordionsHelpersTopProps {
-  state: any;
+export interface QuizViewerModuleProps {
+  className?: any;
+};
+
+export interface ViewerQuestionTypeProps {
+  className?: any;
+  number: any;
+  setCurrentAnswer: any;
+  currentAnswer: any;
+  completed: any;
+};
+
+export interface ProgressStepsProgressMinimalIcProps {
+  className?: any;
+  completed: any;
+  current: any;
+};
+
+export interface ChevronProps {
+  className?: any;
+  direction: any;
+};
+
+export interface Button1Props {
+  className?: any;
   onClick: any;
-  title: any;
+  completed: any;
+  current: any;
+  currentAnswer: any;
 };
 
-export interface AccordionsHelpersContentProps {
-  content: any;
+export interface StepBaseProps {
+  className?: any;
+  completed: any;
+  active: any;
+  number: any;
 };
 
-export interface AccordionsAccordionProps {
-  title: any;
-  content: any;
-  testprop: any;
-};

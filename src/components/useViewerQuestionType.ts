@@ -9,22 +9,18 @@
 *
 *
 **********************************************************************/
+import React, { useState } from "react";
 
-import { useState } from "react";
+const useViewerQuestionType = () => {
 
-const useAccordionsAccordion = () => {
+  const [isHover, setIsHover] = useState(false);
+  let data : any= {};
+  data.isHover = isHover;
+  const hoverOn = (): any => {setIsHover(true)};
+  const hoverOff = (): any => {setIsHover(false)};
 
-  const [state, setState] = useState('collapsed')
-
-  let data: any = {
-    state
-  };
-  const onAccordionClick = (param1:any): any => {
-    setState(state === 'collapsed' ? 'expanded' : 'collapsed')
-  };
-
-  let fns: any = {onAccordionClick};
+  let fns: any = {hoverOn, hoverOff};
   return {data, fns};
 }
 
-export default useAccordionsAccordion;
+export default useViewerQuestionType;

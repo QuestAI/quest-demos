@@ -1,9 +1,9 @@
 import React from "react";
-import AccordianDemo from "./components/AccordianDemo";
+import QuizViewerModule from "./components/QuizViewerModule";
 
 function App() {
   return <div className="App">
-    <AccordianDemo />
+    <QuizViewerModule />
   </div>;
 }
 
